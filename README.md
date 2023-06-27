@@ -1,5 +1,5 @@
 - 👋 Hi, I’m Ben!
-- 👀 I’m interested in Python amd Metal Music
+- 👀 I’m interested in Python and Metal Music
 - 🌱 I’m currently learning Python
 - 💞️ I’m looking to collaborate on Python realted things in order to get better 
 - 📫 How to reach me on, da 🤳
