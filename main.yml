@@ -22,32 +22,27 @@ jobs:
           config_timezone: Israel/Jerusalem
 
           # --- THEME & DESIGN ---
-          config_theme: tokyonight # ערכת נושא כהה ומגניבה (אפשרויות נוספות: darkvalene, Dracula, cobalt)
+          config_theme: tokyonight
 
-          # --- MUSIC: RECENT TRACKS (5 האחרונים) ---
+          # --- MUSIC (Last.fm - Recent Tracks) ---
           plugin_music: yes
           plugin_music_provider: lastfm
           plugin_music_mode: recent
           plugin_music_limit: 5
-          plugin_music_user: .user.login
+          plugin_music_user: JoJoBot420
           plugin_music_token: ${{ secrets.LASTFM_API_KEY }}
-
-          # --- MUSIC: TOP ALBUMS (אלבומים מובילים) ---
-          plugin_music_top: yes
-          plugin_music_top_provider: lastfm
-          plugin_music_top_mode: top
-          plugin_music_top_type: albums
-          plugin_music_top_time_range: short # 4 השבועות האחרונים
-          plugin_music_top_limit: 4
-          plugin_music_top_user: .user.login
-          plugin_music_top_token: ${{ secrets.LASTFM_API_KEY }}
 
           # --- LANGUAGES & CODE ---
           plugin_languages: yes
           plugin_languages_colors: github
           plugin_languages_threshold: 0%
           plugin_languages_details: percentage, bytes-size
+
+          # --- LINES (Fixed) ---
           plugin_lines: yes
+          plugin_lines_history_limit: 1
+          plugin_lines_repositories_limit: 4
+          plugin_lines_sections: base, history, repositories
 
           # --- 3D ISOMETRIC CALENDAR ---
           plugin_isocalendar: yes
